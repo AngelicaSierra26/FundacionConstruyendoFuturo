@@ -8,95 +8,268 @@
         /* Estilos CSS */
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f0f0; /* Color de fondo de la página */
-            margin: 0; /* Eliminar margen predeterminado */
-            padding: 0; /* Eliminar relleno predeterminado */
+            background-color: #f0f0f0;
+            /* Color de fondo de la página */
+            margin: 0;
+            /* Eliminar margen predeterminado */
+            padding: 0;
+            /* Eliminar relleno predeterminado */
         }
+    
         #header {
             display: flex;
             align-items: center;
             padding: 20px;
         }
+    
         #logo-fundacion img {
-            height:250px; /* Ajustar tamaño del logo de la fundación */
+            height: 250px;
+            /* Ajustar tamaño del logo de la fundación */
         }
+    
         #nombre-fundacion {
-            font-size: 50px; /* Tamaño de fuente */
-            font-weight: bold; /* Negrita */
-            color: #333; /* Color del texto */
+            font-size: 50px;
+            /* Tamaño de fuente */
+            font-weight: bold;
+            /* Negrita */
+            color: #333;
+            /* Color del texto */
             margin-left: 40px;
-        }
-        #ministerio-cultura img {
-            height: 50px; /* Ajustar tamaño del logo del Ministerio de Cultura */
-            margin-left: 20px; /* Mover hacia la derecha */
-        }
-        #lineas {
-            border-top: 1px solid #000; /* Línea horizontal negra */
-            border-bottom: 1px solid #000; /* Línea horizontal negra */
-            margin: 10px 0; /* Margen superior e inferior */
-        }
-        #pestanas {
-            background-color: #82DEE4; /* Color de fondo de las pestañas */
-            padding: 10px;
             text-align: center;
         }
-        #pestanas a {
-            margin: 0 10px; /* Margen entre las pestañas */
+    
+        #ministerio-cultura img {
+            height: 50px;
+            /* Ajustar tamaño del logo del Ministerio de Cultura */
+            margin-left: 20px;
+            /* Mover hacia la derecha */
+        }
+    
+        nav {
+            max-width: auto;
+            height: 50px;
+            margin: auto;
+            background-color: #82DFE7;
+            font-size: 20px;
+            text-align: center;
+    
+        }
+    
+        #letras-menu {
+    
+            max-width: 1000px;
+            margin: 0 auto;
+    
+    
+        }
+    
+        .menu-horizontal {
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
             text-decoration: none;
-            color: #333; /* Color del texto */
-            font-weight: bold; /* Negrita */
+    
+    
         }
+    
+        .menu-horizontal>li:hover {
+            background-color: rgba(130, 223, 231, 0.5);
+            text-align: center;
+            position: relative;
+        }
+    
+        .menu-vertical {
+            position: absolute;
+            display: none;
+            list-style: none;
+            width: 150px;
+            /* Ajustar el ancho del menú desplegable */
+            background-color: #ddd;
+            /* Cambiar el color de fondo a gris claro */
+            border-radius: 8px;
+            /* Ajustar el radio de las esquinas */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            /* Agregar sombra */
+    
+    
+    
+    
+        }
+    
+        .menu-horizontal li:hover .menu-vertical {
+    
+            display: block;
+    
+        }
+    
+        .menu-vertical li:hover {
+            background-color: rgba(130, 223, 231, 0.5);
+        }
+    
+        .menu-vertical li {
+            background-color: #82DFE7
+        }
+    
+        .menu-vertical li a {
+            display: block;
+            color: #333;
+            /* Cambiar el color del texto */
+            padding: 12px 20px;
+            /* Ajustar el espacio entre el texto y los bordes */
+            text-decoration: none;
+            /* Eliminar subrayado del texto */
+        }
+    
+        .menu-horizontal li a {
+            text-decoration: none;
+        }
+    
+        #lineas {
+            border-top: 1px solid #000;
+            /* Línea horizontal negra */
+            border-bottom: 1px solid #000;
+            /* Línea horizontal negra */
+            margin: 10px 0;
+            /* Margen superior e inferior */
+        }
+    
+    
         .subseccion {
-            font-weight: normal; /* Texto normal */
+            font-weight: normal;
+            /* Texto normal */
         }
+    
         #contenido {
             padding: 20px;
         }
-        
+    
+        .descripcion {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            /* Divide el contenedor en dos columnas de igual ancho */
+            gap: 20px;
+            /* Espacio entre los elementos */
+        }
+    
+        .text {
+            flex: 1;
+            padding-right: 20px;
+            /* Ajusta el espacio entre el texto y la imagen según sea necesario */
+            margin: 25px;
+            /* Eliminar margen predeterminado */
+        }
+    
+        #imagen-inicio img {
+            margin-top: 45px;
+            /* Define un borde de 2 píxeles de grosor y sólido en color negro */
+        }
     </style>
-</head>
-<body>
-    <div id="header">
-        <div id="logo-fundacion">
-            <img src="Images/Logo FCFS.jpg" alt="Logo Fundación">
-        </div>
-        <div id="nombre-fundacion">
-            Fundación Construyendo Futuro por Santander
-        </div>
-        <div id="ministerio-cultura">
-            <img src="Images/LOGOMINCULTURA.png" alt="Logo Ministerio de Cultura">
-        </div>
-    </div>
-
-    <div id="lineas"></div>
+    </head>
     
-
-    <div id="pestanas">
+    <body>
+        <div id="header">
+            <div id="logo-fundacion">
+                <img src="Images/Logo FCFS.jpg" alt="Logo Fundación">
+            </div>
+            <div id="nombre-fundacion">
+                Fundación Construyendo Futuro por Santander
+            </div>
+            <div id="ministerio-cultura">
+                <img src="Images/LOGOMINCULTURA.png" alt="Logo Ministerio de Cultura">
+            </div>
+        </div>
     
-        <a href="#inicio">Inicio</a>
-        <a href="#conocenos">Conócenos</a>
-        <a href="#proyectos Ejecución">Proyectos Ejecución</a>
-        <a href="#proyectos-pasados">Proyectos Pasados</a>
-        <a href="#contactenos">Contáctenos</a>
-    </div>
-    <div id="lineas"></div>
-   <div id="contenido">
-        <h2 id="inicio">Inicio</h2>
-
-        <h2 id="conocenos">Conócenos</h2>
-        <h3 class="subseccion">Misión</h3>
-        <h3 class="subseccion">Visión</h3>
-        <h3 class="subseccion">Redes Sociales</h3>
-
-        <h2 id="proximos-proyectos">Próximos Proyectos</h2>
-        <h3 class="subseccion">Adulto Mayor Activo: Paz y Reconciliación</h3>
-        <h4 class="subseccion">Inscripciones</h4>
-
-        <h2 id="proyectos-pasados">Proyectos Pasados</h2>
-        <h3 class="subseccion">Adulto Mayor Activo 2023</h3>
-
-        <h2 id="contactenos">Contáctenos</h2>
-        <h3 class="subseccion">Enviar Mensaje</h3>
-    </div>
-</body>
-</html>
+    
+    
+        <nav> <!--Menu de navegación-->
+            <div id="letras-menu" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">
+                <ul class="menu-horizontal">
+                    <li>
+                        <a href="#">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="#">Conocenos</a>
+                        <ul class="menu-vertical">
+                            <li>
+                                <a href="#">Misión</a>
+                            </li>
+                            <li>
+                                <a href="#">Vision</a>
+                            </li>
+                            <li>
+                                <a href="#">Redes Sociales</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Proyectos en Ejecución</a>
+                        <ul class="menu-vertical">
+                            <li>
+                                <a href="#">adulto mayor activo: paz y reconciliación</a>
+                            </li>
+                            <li>
+                                <a href="#">Inscripciones</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Proyectos pasados</a>
+                        <ul class="menu-vertical">
+                            <li>
+                                <a href="#">Adulto Mayor Activo 2023</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Convocatorias</a>
+                    </li>
+                    <li>
+                        <a href="#">Contactenos</a>
+                        <ul class="menu-vertical">
+                            <li>
+                                <a href="#">Enviar mensaje</a>
+                            </li>
+                        </ul>
+                    </li>
+    
+    
+                </ul>
+    
+        </nav>
+        </div>
+    
+        <div class="descripcion">
+            <div class="text" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">
+                <p>
+                    La Fundación Construyendo Futuro por Santander es una organización sin ánimo de lucro dedicada a la
+                    promoción del desarrollo integral de la comunidad a través de proyectos y talleres que brindan
+                    oportunidades de aprendizaje y crecimiento personal.
+                <p></p>
+                Nuestra fundación se enfoca en ofrecer programas educativos y culturales diseñados para empoderar a personas
+                de todas las edades y trasfondos socioeconómicos. Creemos firmemente en el poder transformador del arte, la
+                música y la danza como herramientas para fomentar el bienestar emocional, el desarrollo creativo y el
+                fortalecimiento de la autoestima.
+                <p></p>
+                Nuestros proyectos y talleres están diseñados para ser inclusivos y accesibles para todos. Desde clases de
+                música y danza hasta talleres de artesanía y actividades culturales, nuestro objetivo es crear un espacio
+                donde las personas puedan descubrir y desarrollar sus talentos, explorar nuevas pasiones y encontrar
+                comunidad en un ambiente de apoyo y respeto mutuo.</p>
+                <p></p>
+                Al colaborar con diversos profesionales y artistas locales, nuestra fundación ofrece una amplia gama de
+                oportunidades de aprendizaje, desde clases magistrales hasta eventos culturales y presentaciones artísticas.
+                Nos comprometemos a crear un impacto positivo en la sociedad, brindando herramientas y recursos que fomenten
+                el crecimiento personal, la creatividad y la expresión individual.
+                <p></p>
+                En la Fundación Construyendo Futuro por Santander, creemos en el potencial de cada individuo para alcanzar
+                sus metas y contribuir al bienestar colectivo de nuestra comunidad. Estamos dedicados a construir un futuro
+                más brillante y equitativo para todos, donde cada persona tenga la oportunidad de aprender, crecer y
+                prosperar. ¡Únete a nosotros en nuestro viaje de descubrimiento y crecimiento!
+            </div>
+            <div id="imagen-inicio" style="margin-right: 25px;">
+                <img src="Images/inicio.jpg" alt="Descripción de la imagen" width="800" style="float: right;">
+            </div>
+        </div>
+    </body>
+    
+    </html>
