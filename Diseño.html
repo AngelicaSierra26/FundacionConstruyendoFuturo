@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a70530f2f6.js" crossorigin="anonymous"></script>
+
     <title>Fundación Construyendo Futuro por Santander</title>
+    
+
     <style>
         /* Estilos CSS */
         body {
@@ -44,87 +48,104 @@
             margin-left: 20px;
             /* Mover hacia la derecha */
         }
-    
         nav {
-            max-width: auto;
-            height: 50px;
-            margin: auto;
-            background-color: #82DFE7;
-            font-size: 20px;
-            text-align: center;
-    
-        }
-    
-        #letras-menu {
-    
-            max-width: 1000px;
-            margin: 0 auto;
-    
-    
-        }
-    
-        .menu-horizontal {
-            list-style: none;
-            display: flex;
-            justify-content: space-between;
-            text-align: center;
-            text-decoration: none;
-    
-    
-        }
-    
-        .menu-horizontal>li:hover {
-            background-color: rgba(130, 223, 231, 0.5);
-            text-align: center;
-            position: relative;
-        }
-    
-        .menu-vertical {
-            position: absolute;
-            display: none;
-            list-style: none;
-            width: 150px;
-            /* Ajustar el ancho del menú desplegable */
-            background-color: #ddd;
-            /* Cambiar el color de fondo a gris claro */
-            border-radius: 8px;
-            /* Ajustar el radio de las esquinas */
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-            /* Agregar sombra */
-    
-    
-    
-    
-        }
-    
-        .menu-horizontal li:hover .menu-vertical {
-    
-            display: block;
-    
-        }
-    
-        .menu-vertical li:hover {
-            background-color: rgba(130, 223, 231, 0.5);
-        }
-    
-        .menu-vertical li {
-            background-color: #82DFE7
-        }
-    
-        .menu-vertical li a {
-            display: block;
-            color: #333;
-            /* Cambiar el color del texto */
-            padding: 12px 20px;
-            /* Ajustar el espacio entre el texto y los bordes */
-            text-decoration: none;
-            /* Eliminar subrayado del texto */
-        }
-    
-        .menu-horizontal li a {
-            text-decoration: none;
-        }
-    
+    background-color: #82DFE7;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#letras-menu {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+nav {
+    background-color: #82DFE7;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#letras-menu {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+nav {
+    background-color: #82DFE7;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#letras-menu {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.menu-horizontal {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+
+.menu-horizontal > li {
+    position: relative;
+}
+
+.menu-horizontal > li > a {
+    color: #333;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+.menu-horizontal > li:hover > a {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.menu-horizontal > li > .menu-vertical {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-width: 200px;
+    z-index: 1000;
+    display: none;
+    list-style: none; /* Quitar el puntito */
+    padding: 0; /* Quitar el padding */
+}
+
+.menu-horizontal > li:hover > .menu-vertical {
+    display: block;
+}
+
+.menu-vertical > li {
+    border-bottom: 1px solid #ddd;
+}
+
+.menu-vertical > li:last-child {
+    border-bottom: none;
+}
+
+.menu-vertical > li > a {
+    display: block;
+    padding: 12px 20px;
+    color: #555;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.menu-vertical > li > a:hover {
+    background-color: #f0f0f0;
+}
+
+
         #lineas {
             border-top: 1px solid #000;
             /* Línea horizontal negra */
@@ -164,6 +185,95 @@
             margin-top: 45px;
             /* Define un borde de 2 píxeles de grosor y sólido en color negro */
         }
+
+        .footer {
+    background-color: #373737;
+    color: #fff;
+    padding: 40px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1 1 300px;
+    margin-bottom: 20px;
+}
+
+.about h2 {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.about p {
+    color: #aaa;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.contact span {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.links h2 {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.links li {
+    margin-bottom: 10px;
+}
+
+.links a {
+    color: #aaa;
+    text-decoration: none;
+}
+
+.links a:hover {
+    color: #fff;
+}
+
+.social h2 {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.social-links a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #aaa;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;
+    margin-right: 10px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.social-links a:hover {
+    background-color: #555;
+}
+
     </style>
     </head>
     
@@ -181,8 +291,9 @@
         </div>
     
     
-    
-        <nav> <!--Menu de navegación-->
+        
+   
+        <nav> 
             <div id="letras-menu" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">
                 <ul class="menu-horizontal">
                     <li>
@@ -206,7 +317,7 @@
                         <a href="#">Proyectos en Ejecución</a>
                         <ul class="menu-vertical">
                             <li>
-                                <a href="#">adulto mayor activo: paz y reconciliación</a>
+                                <a href="#">Adulto mayor activo: paz y reconciliación</a>
                             </li>
                             <li>
                                 <a href="#">Inscripciones</a>
@@ -238,7 +349,7 @@
     
         </nav>
         </div>
-    
+        
         <div class="descripcion">
             <div class="text" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">
                 <p>
@@ -271,5 +382,41 @@
             </div>
         </div>
     </body>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h2 class="logo">Fundacion Construyendo futuro por santander</h2>
+                    <p>"Uniendo manos y corazones para edificar un mañana lleno de oportunidades y esperanza en Santander: ¡Juntos, construyamos el futuro que merecemos!"</p>
+                    <div class="contact">
+                        <span><i class="fas fa-map-marker-alt"></i> Piedecuesta, Santander</span>
+                        <span><i class="fas fa-phone"></i> (+57)317 494009</span>
+                        <span><i class="fas fa-envelope"></i> funconstrueyendofuturosan@gmail.com</span>
+                    </div>
+                </div>
+                <div class="footer-section links">
+                    <h2>Enlaces</h2>
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Conocenos</a></li>
+                        <li><a href="#">Proyectos en ejecucion</a></li>
+                        <li><a href="#">Proyectos pasados</a></li>
+                        <li><a href="#">Convocatorias</a></li>
+                        <li><a href="#">Contactenos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section social">
+                    <h2>Síguenos</h2>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
     
     </html>
